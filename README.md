@@ -1,4 +1,4 @@
-﻿# Bandwidth required for remote clusters
+# Bandwidth required for remote clusters
 
 This answers the following FAQ,
 
@@ -8,7 +8,7 @@ Required bandwidth *W* (Mbps) is derived from the distance *D* (km) between the 
 
     W = 25000 / ( D + 370 )
 
-In addition, the required time *T* (hours) for a recovery oprstsyion of *V* (GB) volume is derived from *V* and *W*
+In addition, the required time *T* (hours) for a recovery operation of *V* (GB) volume is derived from *V* and *W*
 
     T = 2.28 * V / W
 
@@ -20,7 +20,7 @@ Using async replication would be required if RTT exceeds **20 msec**, making it 
 ## Theory
 -->
 
-#### Assumptions
+### Assumptions
 - **Synchronous** replication
 - **64 KB** TCP Window Size and no TCP Window Scaling
 - Using dark fiber network, **0.01 msec/km** speed of light in the dark fiber
@@ -28,5 +28,4 @@ Using async replication would be required if RTT exceeds **20 msec**, making it 
 - The volume recovery is **full-copy**
 
 ---
-
 Note, this presents a way to estimate the logical upper bound, and no guarantee.
