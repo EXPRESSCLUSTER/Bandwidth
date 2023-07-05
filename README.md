@@ -3,8 +3,8 @@
 This answers the following FAQ,
 
 > I want to know the minimum bandwidth required between 2 remote ECX hosts in the same cluster.
----
-Note, this presents a way to estimate the logical upper bound, and no guarantee.
+
+Note this just shows an estimate the logical upper bound. Hope it helps, but don't rely fully on it.
 
 ---
 
